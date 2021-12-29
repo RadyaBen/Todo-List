@@ -119,7 +119,7 @@ export default class App extends Component {
 
 	render() {
 		const { data, term, filter, errorMessage } = this.state;
-	
+
 		const liked = data.filter(item => item.like).length;
 		const allPosts = data.length;
 

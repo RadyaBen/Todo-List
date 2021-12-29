@@ -8,11 +8,9 @@ export default class SearchPanel extends Component {
 		this.state = {
 			term: ''
 		}
-		this.onUpdateSearch = this.onUpdateSearch.bind(this);
 	}
 
-	// We'll monitor what a user enters and after that change our state 
-	onUpdateSearch(e) {
+	onUpdateSearch = (e) => {
 		const term = e.target.value;
 		this.setState({ term });
 		this.props.onUpdateSearch(term);
