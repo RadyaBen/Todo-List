@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './postListItem.css'
 
-export default class PostListItem extends Component {
+class PostListItem extends Component {
 
 	render() {
 		const { label, onDeleteItem, onToggleImportant, onToggleLiked, important, like } = this.props;
@@ -39,6 +39,8 @@ export default class PostListItem extends Component {
 					<i className="fa fa-heart"></i>
 				</div>
 			</div>
-		)
+		);
 	}
 }
+
+export { PostListItem };

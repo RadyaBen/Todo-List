@@ -1,2 +1,1 @@
-import PostListItem from './PostListItem';
-export default PostListItem;
+export * from './PostListItem';

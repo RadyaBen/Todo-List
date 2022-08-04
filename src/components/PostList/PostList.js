@@ -1,5 +1,6 @@
 import React from 'react';
-import PostListItem from '../PostListItem';
+
+import { PostListItem } from '../PostListItem';
 
 import './postList.css'
 
@@ -15,14 +16,14 @@ const PostList = ({ posts, onDeleteItem, onToggleImportant, onToggleLiked }) => 
 					onToggleImportant={() => onToggleImportant(id)}
 					onToggleLiked={() => onToggleLiked(id)} />
 			</li>
-		)
+		);
 	});
 
 	return (
 		<ul className="app-list list-group">
 			{elements}
 		</ul>
-	)
-}
+	);
+};
 
-export default PostList;
+export { PostList };

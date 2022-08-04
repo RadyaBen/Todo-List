@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import AppHeader from '../AppHeader';
-import SearchPanel from '../SearchPanel';
-import PostStatusFilter from '../PostStatusFilter';
-import PostList from '../PostList';
-import PostAddForm from '../PostAddForm';
+
+import { AppHeader } from '../AppHeader';
+import { SearchPanel } from '../SearchPanel';
+import { PostStatusFilter } from '../PostStatusFilter';
+import { PostList } from '../PostList';
+import { PostAddForm } from '../PostAddForm';
 
 import './app.css';
 
-export default class App extends Component {
+class App extends Component {
 
 	constructor(props) {
 		super(props);
@@ -146,6 +147,8 @@ export default class App extends Component {
 					onAddItem={this.onAddItem}
 					errorMessage={errorMessage} />
 			</div>
-		)
+		);
 	}
 }
+
+export { App };

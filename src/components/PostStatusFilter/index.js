@@ -1,2 +1,1 @@
-import PostStatusFilter from './PostStatusFilter'
-export default PostStatusFilter;
+export * from './PostStatusFilter'
