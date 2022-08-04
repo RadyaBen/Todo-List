@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './postAddForm.css'
 
-export default class PostAddForm extends Component {
+class PostAddForm extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -46,6 +46,8 @@ export default class PostAddForm extends Component {
 					Add
 				</button>
 			</form>
-		)
+		);
 	}
 }
+
+export { PostAddForm };

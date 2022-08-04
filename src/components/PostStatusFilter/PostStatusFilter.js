@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class PostStatusFilter extends Component {
+class PostStatusFilter extends Component {
 	constructor(props) {
 		super(props);
 		this.buttons = [
@@ -27,6 +27,8 @@ export default class PostStatusFilter extends Component {
 			<div className="btn-group">
 				{buttons}
 			</div>
-		)
+		);
 	}
 }
+
+export { PostStatusFilter }; 

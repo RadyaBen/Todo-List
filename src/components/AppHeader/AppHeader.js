@@ -1,8 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import './appHeader.css';
-import styled from 'styled-components';
-//:hover
+
 const Header = styled.div` 
 	display: flex;
 	align-items: flex-end;
@@ -26,7 +26,7 @@ const AppHeader = ({ liked, allPosts }) => {
 			<h1>To Do List</h1>
 			<h2>{allPosts} entries, of which I liked {liked}</h2>
 		</Header>
-	)
-}
+	);
+};
 
-export default AppHeader;
+export { AppHeader };

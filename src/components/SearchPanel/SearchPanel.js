@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './searchPanel.css';
 
-export default class SearchPanel extends Component {
+class SearchPanel extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -24,6 +24,8 @@ export default class SearchPanel extends Component {
 				placeholder="Search by notes"
 				onChange={this.onUpdateSearch}
 			/>
-		)
+		);
 	}
 }
+
+export { SearchPanel }; 
